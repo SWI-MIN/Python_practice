@@ -1,7 +1,9 @@
-def GetArea_01(width, height):
-    area = width * height  # area 為區域變數
-    global aarea           # aarea 為全域變數
-    aarea = 1
-    return area
-getarea_01 = GetArea_01(7,16)  # getarea_01 為全域變數
-print(getarea_01,",", aarea)  #112
+while(True):
+    try:
+        a = int(input('pls intput a number : '))
+        b = int(input('pls intput a number : '))
+        r = a % b
+    except (ValueError,ZeroDivisionError) as err:
+        print('find {} error' .format(err))
+    else:
+        print('r = ',r)
